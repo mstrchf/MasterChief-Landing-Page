@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Poppins:wght@400;800;900&family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+.container {
+  height: max-content;
+  padding: 3em 4em;
+  background-color: #232b22e5;
+}
+
+/* navigation bar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  /* max-width: 30%; */
+}
+
+.logo img {
+  margin-right: 0.5em;
+}
+
+.logo span {
+  font-weight: 800;
+  text-decoration: underline;
+  font-size: 1.5em;
+  transition: color .5s;
+}
+
+.logo span:hover {
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  flex: 2;
+  padding-right: 5em;
+  margin-top: 6em;
+}
+
+.right {
+  flex: 1;
+  margin-top: 6em;
+}
+
+.right img {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.right img,
+.grid img {
+  width: 100%;
+}
+
+.right img:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.2em;
+  color: #100f0f;
+  transition: color .25s, box-shadow .5s, background 0.5s;
+  background: transparent;
+  padding: 0.25em 0.5em;
+}
+
+li i {
+  padding-right: 5px;
+}
+
+ul li:hover {
+color: aliceblue;
+cursor: pointer;
+/* border-radius: 5px; */
+box-shadow: 2px -2px 0 3px #6a79688a;
+background-color: #232b22f2;
+}
+
+.active {
+  border-radius: 5px;
+  box-shadow: 2px -2px 0 3px #6a79688a;
+}
+
+/* header styles */
+header h1 {
+  font-size: 4.5em;
+  font-weight: 800;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+header p {
+  font-size: 1.5em;
+  color: #090910;
+  margin-bottom: 1.5em;
+}
+
+/* main styles */
+main {
+  /* max-width: 75%; */
+  padding-bottom: 2em;
+  background-color: #232b22f2;
+  border-radius: 5px;
+  margin-bottom: 4em;
+}
+
+main p {
+  padding: 2em 2em 0 2em;
+  font-size: 1.25em;
+  color: #e9e9e98e;
+}
+
+main p:hover {
+  color: aliceblue;
+}
+
+p i {
+  color: tan;
+  font-size: 1.25em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  gap: 0.5em 2.5em;
+  align-items: center;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.grid > div {
+  position: relative;
+}
+
+.grid p {
+  display: none;
+  position: absolute;
+  right: 0;
+  font-size: 1vw;
+  color: #e9e9e98e;
+}
+
+.grid div img {
+  transition: transform 0.5s;
+}
+
+.grid div:hover img {
+  transform: scaleX(-1);
+}
+
+.grid div:hover p {
+  display: block;
+}
