@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  height: max-content;
+  height: 100vh;
   padding: 3em 4em;
   background-color: #232b22e5;
 }
